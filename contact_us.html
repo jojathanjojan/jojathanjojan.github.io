@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <li><img id="logo" src="logo.png"></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="biodata.html">BIODATA</a></li>
+        <li><a href="contact_us">CONTACT US</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="https://unai.edu">UNAI</a></li>
+        <li><a href="https://fti.unai.edu">FTI UNAI</a></li>
+        <li><a href="claudio.html" id="claudio">CLAUDIO</a></li>
+      </ul>
+    </div><br><br><br>
+    <div class="title">
+        <p>Silahkan isi form yang tersedia di bawah ini</p><br>
+    </div>
+    <div>
+        <form action="simpan.php" method="post">
+            <label for="fname">Nama Lengkap</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap..">
+    
+            <label for="lname">Email</label>
+            <input type="email" id="lname" name="lastname" placeholder="Email..">
+    
+            <label for="fname">Username</label>
+            <input type="text" id="fname" name="firstname" placeholder="Username..">
+    
+            <label for="fname">Password</label>
+            <input type="password" id="fname" name="firstname" placeholder="Password..">
+            
+            <label for="fname">Jenis Kelamin</label><br>
+            <input type="radio" id="laki" name="jenis_kelamin" value="laki">
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+    
+    
+            <label for="agama">Agama</label>
+            <select id="agama" name="agama">
+                <option value="agama">Pilih Agama</option>
+                <option value="kristen">Kristen Protestan</option>
+                <option value="katolik">Katolik</option>
+                <option value="islam">Islam</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+            
+            <label for="alamat">Alamat</label><br>
+            <textarea name="message" style="width:500px; height:80px;">Alamat</textarea>
+            <br>
+    
+            <label for="hobby">Hobby</label><br>
+            <input type="checkbox" id="hobby" name="olahraga" value="olahraga">
+            <label for="olahraga">Olahraga</label><br>
+            <input type="checkbox" id="hobby" name="masal" value="masak">
+            <label for="masak">Masak</label><br>
+            <input type="checkbox" id="hobby" name="nonton" value="nonton">
+            <label for="nonton">Nonton</label><br>
+      
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

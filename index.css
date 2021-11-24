@@ -1,0 +1,62 @@
+#logo {
+    width: 105px;
+    position: relative;
+    left: 130px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001870;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left:443px;
+    top: 40px;
+}
+  
+li a:hover {
+    color: #fbce01;
+}
+#claudio {
+    border: 2px solid #fbce01;
+}
+#claudio:hover {
+    background-color: #fbce01;
+    color: #001870;
+}
+#con {
+    width: 1506px;
+}
+img {
+    width: 1503px;
+}
+h1{
+    color:#001870;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 300px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404040;
+    position: relative;
+    left: 300px;
+}
+
+

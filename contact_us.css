@@ -1,0 +1,85 @@
+body {
+    background-image: linear-gradient(#ffffff, #fbce01);
+}
+
+
+#logo {
+    width: 105px;
+    position: relative;
+    left: 130px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001870;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left:443px;
+    top: 40px;
+}
+  
+li a:hover {
+    color: #fbce01;
+}
+#claudio {
+    border: 2px solid #fbce01;
+}
+#claudio:hover {
+    background-color: #fbce01;
+    color: #001870;
+}
+input[type=text],input[type=email],input[type=password],input[type=submit],textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #001870;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #05195f;
+}
+  
+div {
+    border-radius: 5px;
+    background-color: none;
+    color: #000;
+}
+p {
+    color: #000;
+    font-family:'Montserrat', sans-serif; 
+}
+label {
+    font-family:'Montserrat', sans-serif;
+}
