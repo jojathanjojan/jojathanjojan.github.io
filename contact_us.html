@@ -1,75 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Contact Us</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact_us.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+                /* Navigation Bar */
+                .navbar-dark {
+            background: #001870;
+            height: 160px;
+            margin: 5px;
+        }
+        .imgnav {
+            width: 100px;           
+        }
+        .navbar-nav {
+            margin-left: 320px;
+        }
+        .navlink {
+            font-family:  'Montserrat', sans-serif;
+            color: #fff;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+        }
+        a:hover {
+            color:#fbce01;
+        }
+        #claudio {
+            border: 2px solid #fbce01;
+            margin: 10px;
+        }
+        #claudio:hover {
+            background-color: #fbce01;
+            color: #001870;
+        }
+        input[type=text],input[type=email],input[type=password],input[type=submit],textarea, select {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+  
+    input[type=submit] {
+        width: 100%;
+        background-color: #001870;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+  
+    input[type=submit]:hover {
+        background-color: #05195f;
+    }
+  
+    div {
+        border-radius: 5px;
+        background-color: none;
+        color: #000;
+        }
+    p {
+        color: #000;
+        font-family:'Montserrat', sans-serif; 
+    }
+    label {
+        font-family:'Montserrat', sans-serif;
+    
+    }
+    /* Body */
+    body {
+        background-color: #001870;
+        background-size: 50px;
+
+    }
+
+    </style>
 </head>
 <body>
-    <ul>
-        <li><img id="logo" src="logo.png"></li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="biodata.html">BIODATA</a></li>
-        <li><a href="contact_us">CONTACT US</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="https://unai.edu">UNAI</a></li>
-        <li><a href="https://fti.unai.edu">FTI UNAI</a></li>
-        <li><a href="claudio.html" id="claudio">CLAUDIO</a></li>
-      </ul>
-    </div><br><br><br>
-    <div class="title">
-        <p>Silahkan isi form yang tersedia di bawah ini</p><br>
+<!-- Navigation Bar -->
+    
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://beardpapas.com">
+            <img class="imgnav" src="logo.png">
+        </a>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navlink" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="biodata.html">BIODATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="contact_us.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="https://unai.edu" target="_blank">UNAI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="https://fti.unai.edu" target="_blank">FTI UNAI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="claudio.html" id="claudio">CLAUDIO</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <form action="simpan.php" method="post">
-            <label for="fname">Nama Lengkap</label>
-            <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap..">
-    
-            <label for="lname">Email</label>
-            <input type="email" id="lname" name="lastname" placeholder="Email..">
-    
-            <label for="fname">Username</label>
-            <input type="text" id="fname" name="firstname" placeholder="Username..">
-    
-            <label for="fname">Password</label>
-            <input type="password" id="fname" name="firstname" placeholder="Password..">
-            
-            <label for="fname">Jenis Kelamin</label><br>
-            <input type="radio" id="laki" name="jenis_kelamin" value="laki">
-            <label for="laki">Laki-laki</label>
-            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
-            <label for="perempuan">Perempuan</label><br><br>
-    
-    
-            <label for="agama">Agama</label>
-            <select id="agama" name="agama">
-                <option value="agama">Pilih Agama</option>
-                <option value="kristen">Kristen Protestan</option>
-                <option value="katolik">Katolik</option>
-                <option value="islam">Islam</option>
-                <option value="hindu">Hindu</option>
-                <option value="budha">Budha</option>
-            </select>
-            
-            <label for="alamat">Alamat</label><br>
-            <textarea name="message" style="width:500px; height:80px;">Alamat</textarea>
-            <br>
-    
-            <label for="hobby">Hobby</label><br>
-            <input type="checkbox" id="hobby" name="olahraga" value="olahraga">
-            <label for="olahraga">Olahraga</label><br>
-            <input type="checkbox" id="hobby" name="masal" value="masak">
-            <label for="masak">Masak</label><br>
-            <input type="checkbox" id="hobby" name="nonton" value="nonton">
-            <label for="nonton">Nonton</label><br>
-      
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+</nav>
+<div class="container" style="background-color: #fff;">
+    <br><br>
+    <form action="simpan.php" method="post">
+        <label for="fname">Nama Lengkap</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap.."><br>
+
+        <label for="lname">Email</label><br>
+        <input type="email" id="lname" name="lastname" placeholder="Email.."><br>
+
+        <label for="fname">Username</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Username.."><br>
+
+        <label for="fname">Password</label><br>
+        <input type="password" id="fname" name="firstname" placeholder="Password.."><br>
+        
+        <label for="fname">Jenis Kelamin</label><br>
+        <input type="radio" id="laki" name="jenis_kelamin" value="laki">
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+
+        <label for="agama">Agama</label><br>
+        <select id="agama" name="agama">
+            <option value="agama">Pilih Agama</option>
+            <option value="kristen">Kristen Protestan</option>
+            <option value="katolik">Katolik</option>
+            <option value="islam">Islam</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+        </select><br>
+        
+        <label for="alamat">Alamat</label><br>
+        <textarea name="message" style="width:500px; height:80px;">Alamat</textarea>
+        <br>
+
+        <label for="hobby">Hobby</label><br>
+        <input type="checkbox" id="hobby" name="olahraga" value="olahraga">
+        <label for="olahraga">Olahraga</label><br>
+        <input type="checkbox" id="hobby" name="masal" value="masak">
+        <label for="masak">Masak</label><br>
+        <input type="checkbox" id="hobby" name="nonton" value="nonton">
+        <label for="nonton">Nonton</label><br>
+  
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
 </body>
 </html>
