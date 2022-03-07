@@ -1,0 +1,20 @@
+.li {
+    text-align: center;
+}
+
+body {
+    background-image: url('wall.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.2em;
+}
+
+table {
+    color:white !important;
+}
